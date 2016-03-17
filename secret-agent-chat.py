@@ -33,3 +33,4 @@ def save_file(filename, data):
 
 def encrypt(plaintext, sheet):
         ciphertext = ''
+        for position, character in enumerate(plaintext):

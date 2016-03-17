@@ -86,3 +86,5 @@ elif choice == '3':
         print('The message reads:')
         print('')
         print(plaintext)
+elif choice == '4':
+        exit()

@@ -54,3 +54,7 @@ def decrypt(ciphertext, sheet):
 
 
 def menu():
+        choices = ['1','2','3','4']
+        choice = '0'
+        while True:
+                while choice not in choices:

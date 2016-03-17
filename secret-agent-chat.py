@@ -13,3 +13,7 @@ def load_sheet(filename):
         with open(filename, "r") as f:
                 contents = f.read().splitlines()
         return contents
+
+def get_plain_text():
+        plain_text = input('Please type your message')
+        return plain_text.lower()

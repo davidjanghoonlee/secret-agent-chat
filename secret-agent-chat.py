@@ -7,3 +7,7 @@ def generate_opt (sheets, length):
 		with open ("opt" + str(sheet) + ".txt","w") as f:
 			for i in range(length):
 				f.write(str(randint(0,26)) + "\n")
+
+
+def load_sheet(filename):
+        with open(filename, "r") as f:

@@ -14,15 +14,21 @@ def load_sheet(filename):
                 contents = f.read().splitlines()
         return contents
 
+
 def get_plain_text():
         plain_text = input('Please type your message')
         return plain_text.lower()
+
 
 def load_file(filename):
         with open(filename, "r") as f:
                 contents = f.read()
         return contents
 
+
 def save_file(filename, data):
         with open(filename, 'we') as f:
                 f.write(data)
+
+
+def encrypt(plaintext, sheet):

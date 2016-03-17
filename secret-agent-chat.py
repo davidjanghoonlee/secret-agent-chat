@@ -58,3 +58,10 @@ def menu():
         choice = '0'
         while True:
                 while choice not in choices:
+                        print('What would you like yo do?')
+                        print('1. Generate one-time pads')
+                        print ('2. Encrypt a message')
+                        print ('3. Decrypt a message')
+                        print ('4. Quit the program')
+                        choice input('Please type 1, 2, ,3 or 4 and press Enter ')
+                        

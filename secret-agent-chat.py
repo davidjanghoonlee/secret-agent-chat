@@ -67,25 +67,25 @@ def menu():
             choice = input('Please type 1, 2, 3 or 4 and press Enter ')
             if choice == '1':
                 sheets = int(input('''How many one-time pads would
-                you like to generate? '''))
+you like to generate? '''))
                 length = int(input('''What will be your maximum
-                message length? '''))
+message length? '''))
                 generate_otp(sheets, length)
             elif choice == '2':
                 filename = input('''Type in the filename of the OTP
-                you want to use ''')
+you want to use ''')
                 sheet = load_sheet(filename)
-                plaintext = get_plaintext()
+                plaintext = get_plain_text()
                 ciphertext = encrypt(plaintext, sheet)
                 filename = input('''What will be the name
-                of the encrypted file? ''')
+of the encrypted file? ''')
                 save_file(filename, ciphertext)
             elif choice == '3':
                 filename = input('''Type in the filename of the
-                OTP you want to use ''')
+ OTP you want to use ''')
                 sheet = load_sheet(filename)
                 filename = input('''Type in the name of the
-                 file to be decrypted ''')
+ file to be decrypted ''')
                 ciphertext = load_file(filename)
                 plaintext = decrypt(ciphertext, sheet)
                 print('The message reads:')

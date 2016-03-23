@@ -3,15 +3,15 @@ from random import randint
 ALPHABET = 'abcdefghijklmnopqrstuvwxyz'
 
 
-def generate_opt(sheets, length):
+def generate_otp(sheets, length):
     for sheet in range(sheets):
-        with open("opt" + str(sheet) + ".txt", "w") as f:
+        with open('otp' + str(sheet) + ".txt", "w") as f:
             for i in range(length):
                 f.write(str(randint(0, 26)) + "\n")
 
 
 def load_sheet(filename):
-        with open(filename, "r") as f:
+        with open(filename, 'r') as f:
                 contents = f.read().splitlines()
         return contents
 
@@ -22,13 +22,13 @@ def get_plain_text():
 
 
 def load_file(filename):
-        with open(filename, "r") as f:
+        with open(filename, 'r') as f:
                 contents = f.read()
         return contents
 
 
 def save_file(filename, data):
-        with open(filename, 'we') as f:
+        with open(filename, 'w') as f:
                 f.write(data)
 
 
